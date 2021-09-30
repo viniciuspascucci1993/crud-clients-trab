@@ -4,12 +4,13 @@ import java.time.Instant;
 
 import javax.servlet.http.HttpServletRequest;
 
-import com.vinicius.clients.crud.crudclients.services.eceptions.DatabaseIntegrityException;
-import com.vinicius.clients.crud.crudclients.services.eceptions.ResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+
+import com.vinicius.clients.crud.crudclients.services.eceptions.DatabaseIntegrityException;
+import com.vinicius.clients.crud.crudclients.services.eceptions.ResourceNotFoundException;
 
 @ControllerAdvice
 public class ResourceExceptionHandler {
